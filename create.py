@@ -7,6 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 # reading the data from the preprocessed .csv file
 data = pd.read_csv('data.csv')
 
+
 # making the new column containing combination of all the features
 data['comb'] = data['actor_1_name'] + ' ' + data['actor_2_name'] + ' '+ data['actor_3_name'] + ' '+ data['director_name'] +' ' + data['genres']
 
