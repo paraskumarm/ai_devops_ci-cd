@@ -18,6 +18,7 @@ count_matrix = cv.fit_transform(data['comb'])
 # creating a similarity score matrix
 sim = cosine_similarity(count_matrix)
 
+
 # saving the similarity score matrix in a file for later use
 np.save('similarity_matrix', sim)
 
